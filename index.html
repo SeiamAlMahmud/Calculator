@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculator</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  
+  
+ <form name="calculator" class="container">
+ 	<div class="calculator-box">
+ 		<input type="text" name="display" class="display" disabled>
+ 		<input type="button" value="C" onclick="calculator.display.value = ''">
+ 	
+ 	
+ 		<input type="button" value="DE" onclick="calculator.display.value = calculator.display.value.substring(0,calculator.display.value.length-1)">
+ 		
+ 		
+ 		
+ 		<input type="button" value="%" onclick="calculator.display.value = eval((calculator.display.value)/100)">
+ 		<input type="button" value="/" onclick="calculator.display.value += value">
+ 		<input type="button" value="7" onclick="calculator.display.value += value">
+ 		<input type="button" value="8" onclick="calculator.display.value += value">
+ 		<input type="button" value="9" onclick="calculator.display.value += value">
+ 		<input type="button" value="x" onclick="calculator.display.value += '*'">
+ 		<input type="button" value="4" onclick="calculator.display.value += value">
+ 		<input type="button" value="5" onclick="calculator.display.value += value">
+ 		<input type="button" value="6" onclick="calculator.display.value += value">
+ 		<input type="button" value="-" onclick="calculator.display.value += value">
+ 		<input type="button" value="1" onclick="calculator.display.value += value">
+ 		<input type="button" value="2" onclick="calculator.display.value += value">
+ 		<input type="button" value="3" onclick="calculator.display.value += value">
+ 		<input type="button" value="+" onclick="calculator.display.value += value">
+ 		<input type="button" value="00" onclick="calculator.display.value += value">
+ 		<input type="button" value="0" onclick="calculator.display.value += value">
+ 		<input type="button" value="." onclick="calculator.display.value += value">
+ 		<input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+ 		
+ 	</div>
+ 	
+ </form> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>

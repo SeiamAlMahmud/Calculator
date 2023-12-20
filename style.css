@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #e1e1f4;
+	outline: none;
+}
+
+.container{
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator-box{
+	display: grid;
+	grid-template-columns: repeat(4,68px);
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgb(0,0,0,0.16);
+	background-color: #ECF0F3;
+}
+
+.display{
+	grid-column: span 4;
+	height: 80px;
+	width: 260px;
+	border: none;
+	box-shadow: inset -5px -5px 12px #fff, inset 5px 5px 12px rgb(0,0,0,0.16);
+	border-radius: 5px;
+	text-align: end;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+input{
+	height: 48px;
+	width: 48px;
+	border: none;
+	border-radius: 50%;
+	background-color: #ECF0F3;
+	box-shadow:  -5px -5px 12px #fff,  5px 5px 12px rgb(0,0,0,0.16);
+	margin: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+
+input[type="button"]:active{
+	background: #d5d5d5;
+	font-size: 16px;
+}
+
+input[value="C"]{
+	background-color: #F92F60;
+	color: #fff;
+}
+
+input[value="DE"] {
+	background-color: #F92F60;
+	color: #fff;
+}
+input[value="%"] {
+	background-color: #F92F60;
+	color: #fff;
+}
+input[value="/"] {
+	background-color: #F92F60;
+	color: #fff;
+}
+input[value="x"] {
+	background-color: #F92F60;
+	color: #fff;
+}
+input[value="-"] {
+	background-color: #F92F60;
+	color: #fff;
+}
+input[value="+"] {
+	background-color: #F92F60;
+	color: #fff;
+}
+input[value="="] {
+	background-color: #F92F60;
+	color: #fff;
+}
